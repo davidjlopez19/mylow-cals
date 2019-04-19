@@ -7,4 +7,9 @@
 
 <% end %>
 
-<%= will_paginate @places, renderer: BootstrapPagination::Rails %>
+
+<ul class="pagination pagination col-10 offset-1">
+  <li class="prev disabled"><span>&#8592; Previous</span></li> 
+  <li class="active"><span>1</span></li> <li><a rel="next" href="/?page=2">2</a></li> 
+  <li class="next"><a rel="next" href="/?page=2">Next &#8594;</a></li>
+</ul>

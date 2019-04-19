@@ -40,3 +40,54 @@ body {
   letter-spacing: -0.3px;
 }
 
+.pagination > li:first-child > span, .pagination > li:first-child > a {
+    border-bottom-left-radius: 10px  !important;
+    border-top-left-radius: 10px !important;
+    }
+
+.pagination > li:last-child > a, .pagination > li:last-child > span {
+    border-bottom-right-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    }
+
+  .pagination > .active > span {
+    z-index: 5;
+    color: #fbfafa;
+    background-color: #00AF50;
+    border-color: #3a393e;
+    cursor: pointer;
+  }
+
+  .pagination > .active > span:hover {
+  background-color: #3a393e;
+  border-color: #3a393e;
+  }
+
+.pagination > li > a:hover, .pagination > li > span:hover {
+ background-color: #3a393e;
+  border-color: #3a393e;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+ 
+  
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    line-height: 1.428571429;
+    text-decoration: none;
+    color: #fbfafa;
+    background-color: #00AF50;
+    border: 1px solid #504949;
+    margin-left: 4px;
+}
+
+.pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus
+
+{
+ color: #fdfbfb;
+    background-color: #00AF50;
+    border-color: #353232;
+    cursor: not-allowed;
+}
