@@ -92,3 +92,12 @@ body {
     border-color: #353232;
     cursor: not-allowed;
 }
+
+.btn-primary {
+  background-color: #00AF50;
+  border-color: #353232;
+}
+
+.btn-primary > a:hover {
+  background-color: #353232;
+}
