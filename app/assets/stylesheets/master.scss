@@ -6,13 +6,16 @@
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  box-shadow: 0 7px 7px 2px rgba(0, 0, 0, 0.4);
   background: #fff;
   border: 1px solid #ccc;
-  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  border-color: #3a393e;
   margin-top: 10px;
   margin-bottom: 15px;
   padding: 20px;
+}
+
+.booyah-box:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,11 +24,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #00AF50;
+  color: #01632e;
 }
 
 a:focus, a:hover {
-  color: #01632e;
+  color: #00AF50;
   text-decoration: none;
 }
 
@@ -48,6 +51,10 @@ body {
   font-family: 'Fjalla One', sans-serif;
   font-weight: 600;
   letter-spacing: -0.3px;
+}
+
+.navbar-inverse .navbar-nav .nav-link {
+  color: #fff026;
 }
 
 .pagination {
@@ -79,7 +86,7 @@ body {
 
 .pagination > li > a:hover, .pagination > li > span:hover {
   background-color: #3a393e;
-  border-color: #3a393e;
+  border-color: #fff026;
 }
 
 .pagination > li > a,
@@ -106,6 +113,7 @@ body {
 
 .page-link:focus, .page-link:hover {
   color: #fff026;
+  border-color: #fff026;
 }
 
 .btn-primary {
