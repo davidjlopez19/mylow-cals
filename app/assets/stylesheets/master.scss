@@ -6,7 +6,7 @@
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 0 7px 7px 2px rgba(0, 0, 0, 0.4);
   background: #fff;
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
@@ -20,9 +20,18 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+a {
+  color: #00AF50;
+}
+
+a:focus, a:hover {
+  color: #01632e;
+  text-decoration: none;
+}
+
 body {
   background: image_url('round.png');
-  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 }
 
 .navbar {
@@ -39,6 +48,10 @@ body {
   font-family: 'Fjalla One', sans-serif;
   font-weight: 600;
   letter-spacing: -0.3px;
+}
+
+.pagination {
+  margin-top: 20px;
 }
 
 .pagination > li:first-child > span, .pagination > li:first-child > a {
@@ -119,5 +132,13 @@ body {
 
 .btn-danger:hover {
   background-color: #353232;
+  border-color: #353232;
+}
+
+.page-item.disabled .page-link {
+  color: #353232;
+  pointer-events: none;
+  cursor: not-allowed;
+  background-color: #e5e5e5;
   border-color: #353232;
 }
