@@ -21,6 +21,7 @@
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
+  color: #01632e;
 }
 
 a {
@@ -54,7 +55,7 @@ body {
 }
 
 .navbar-inverse .navbar-nav .nav-link {
-  color: #fff026;
+  color: #eaeaea;
 }
 
 .pagination {
@@ -86,7 +87,7 @@ body {
 
 .pagination > li > a:hover, .pagination > li > span:hover {
   background-color: #3a393e;
-  border-color: #fff026;
+  border-color: #ffffff;
 }
 
 .pagination > li > a,
@@ -112,8 +113,8 @@ body {
 }
 
 .page-link:focus, .page-link:hover {
-  color: #fff026;
-  border-color: #fff026;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
 .btn-primary {
@@ -149,4 +150,8 @@ body {
   cursor: not-allowed;
   background-color: #e5e5e5;
   border-color: #353232;
+}
+
+#map {
+  height: 300px;
 }
