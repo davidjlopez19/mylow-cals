@@ -89,3 +89,9 @@
   </div>
 </div>
 
+<div class="booyah-box col-10 offset-1">
+  <%= simple_form_for @photo, url: '#' do |f| %>
+   <%= f.input :caption %>
+   <%= f.submit "Add Photo", class: 'btn btn-primary' %>
+  <% end %>
+</div>
