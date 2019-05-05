@@ -1,0 +1,2 @@
+class AddUseridToPhoto < ApplicationRecord
+end
