@@ -76,8 +76,10 @@
 
     <div class="row">
       <% @place.photos.each do |photo| %>
-        <%= image_tag photo.picture.url %>
-        <%= photo.caption %>
+        <div class="float-left" style="width:400px; height:auto">
+          <%= image_tag photo.picture.url, class: "photo-show" %>
+          <%= photo.caption %>
+        </div>
       <% end %>
     </div>
 </div>

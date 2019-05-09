@@ -8,4 +8,8 @@ class Place < ApplicationRecord
 
   validates :name, :address, :description, presence: true
   validates :name, length: { minimum: 3}
+
+  def thumbnail
+    return self.photos.variant(resize: '500x500')
+  end
 end
