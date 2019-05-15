@@ -180,3 +180,16 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.row {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  display: block;
+}

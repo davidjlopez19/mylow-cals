@@ -19,21 +19,20 @@
         </blockquote>
       </div>
      <% end %> 
-    <% if place.photos.present? %>
-      <div class="col-12">
-        <blockquote>
-          <% if place.photos.last.present? %>
-           <b><%= place.photos.last %></b> -
-          <% end %>
-          <%= place.photos.last.caption %>
-          <small><%= place.photos.last.user.email %></small>        
-        </blockquote>
-      </div>
+
+
+    <div class="row">
+      <% if place.photos.each do |photo| %>
+        <div>
+          <%= image_tag photo.picture.url, class: "photo-show" %>
+          <%= photo.caption %>
+        </div>
+      <% end %>
+    </div>
     <% end %>
   </div>
 <% end %>
+
 <div class="col-10 offset-1">
   <%= will_paginate @places %>
 </div>
-
-
