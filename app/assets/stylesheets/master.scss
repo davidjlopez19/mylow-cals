@@ -18,10 +18,14 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
   margin: 0;
   padding: 0;
   color: #01632e;
+}
+
+h3 {
+  color: white;
 }
 
 a {
@@ -56,6 +60,10 @@ body {
 
 .navbar-inverse .navbar-nav .nav-link {
   color: #eaeaea;
+}
+
+.navbar .navbar-inverse {
+  margin-bottom: 0;
 }
 
 .pagination {
@@ -197,4 +205,36 @@ img {
 .photo-show {
   margin-top: 15px;
   margin-bottom: 15px;
+  box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+  max-height: 550px;
+  width: 100%;
+}
+.carousel-item-prev {
+  display: block;
+}
+
+.carousel-caption {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 60px;
+  font-weight: 100;
+  text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 50px;
+  outline: black;
+  background-size: 100%, 100%;
+  }
+
+.carousel {
+  box-shadow: 0px 3px 8px #2a2a2a;
 }
