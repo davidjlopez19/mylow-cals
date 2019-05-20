@@ -1,4 +1,37 @@
-<h1><%= @user.email %></h1>
-<h2>Member Since: <%= @user.created_at.strftime("%B %d, %Y") %></h2>
-<h4><%= @user.comments.count %> total comments</h4>
-<h4><%= @user.comments.where(rating: '5_stars').count %> total 5 star reviews</h4>
+<div class="booyah-box col-10 offset-1">
+  <div class="row">
+    <div class="col-4 float-left">
+      <%= image_tag 'default-user.png' %>
+      <h6><%= @user.email %></h6>
+    </div>
+
+    <div class="user-details text-center col-8 float-right">
+      <h2>Member Since: <%= @user.created_at.strftime("%B %d, %Y") %></h2>
+      <hr class="line">
+      <h4><%= @user.comments.count %> total comments</h4>
+      <h4><%= @user.comments.where(rating: '5_stars').count %> total 5 star reviews</h4>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+
+<div class="booyah-box col-10 offset-1">
+  <br /><br />
+  <h1 class="text-center">My Comments</h1>
+  <hr class="line">
+  <br /><br />
+  <div class="row">
+    <% @user.comments.each do |comment| %>
+      <div class="col-10 offset-1">
+        <h2 class="text-center"><%= link_to comment.place.name, place_path(comment.place) %></h2>
+        <blockquote>
+          <% if comment.humanized_rating.present? %>
+            <b><%= comment.humanized_rating %></b> -
+          <% end %>
+          <%= comment.message %>
+          <small><%= comment.user.email %></small>
+        </blockquote>
+      </div>
+    <% end %>
+  </div>
+</div>

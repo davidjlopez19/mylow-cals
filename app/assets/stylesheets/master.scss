@@ -24,6 +24,10 @@ h1, h2, h4, h5, h6 {
   color: #01632e;
 }
 
+h6 {
+  text-align: center;
+}
+
 h3 {
   color: white;
 }
@@ -237,4 +241,15 @@ img {
 
 .carousel {
   box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+.user-details {
+  padding-left: 75px;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
